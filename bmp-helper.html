@@ -2,7 +2,19 @@
 
     <body onmousedown="onMouseDown(event)" onmouseup="onMouseUp(event)" onmousemove="onMouseMove(event)" onclick="onClick(event)" onmouseleave="onLeave(event)" style="min-height:100%" >
         <p>Edit the grid below to generate your color shortcodes.</p>
-        <p id="result" style="max-width:33vw; word-break: break-all;"></p>
+        <form id="gridConfig">
+            <label for="gridWidth">Grid Width (Tiles) </label>
+            <input type="number" id="gridWidth" name="width" value="32">
+            <label for="gridHeight">Grid Height (Tiles) </label>
+            <input type="number" id="gridHeight" name="height" value="8">
+            <label for="tileSize">Tile Size </label>
+            <input type="number" id="tileSize" name="size" value="32">
+            <label for="tileGap">Tile Gap </label>
+            <input type="number" id="tileGap" name="gap" value="4">
+        </form>
+        <button onclick="gridSetup()">Adjust Grid</button>
+
+        <p id="result" style="max-width:50vw; max-height:112px; overflow:scroll; word-break:break-all;"></p>
     <body>
 
     <script src="./main.js"></script>
