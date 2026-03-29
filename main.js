@@ -10,7 +10,7 @@ var defaultColor = "#000000";
 var backgroundColor = "#f2f2f2";
 var selColor = defaultColor;
 var colors = ['#000000', '#ffffff', '#ff0000','#00ff00', '#008800', '#0000ff', '#ffff00', '#00ffff', '#ff99ff', '#ff8800', '#990099'];
-var colorShortcodes = ['wh', 'bk', 'rd', 'lm', 'gn', 'bu', 'yl', 'cy', 'pk', 'or', 'pu'];
+var colorShortcodes = ['bk', 'wh', 'rd', 'lm', 'gn', 'bu', 'yl', 'cy', 'pk', 'or', 'pu'];
 
 var bitmap = [];
 
