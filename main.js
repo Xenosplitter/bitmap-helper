@@ -4,7 +4,7 @@ var gridHeight = 8;
 var tileSize = 32;
 var gap = 4;
 var xBorder = 8;
-var yBorder = 240;
+var yBorder = 120;
 
 var defaultColor = "#000000";
 var backgroundColor = "#f2f2f2";
@@ -15,8 +15,6 @@ var colorShortcodes = ['bk', 'wh', 'rd', 'lm', 'gn', 'bu', 'yl', 'cy', 'pk', 'or
 var bitmap = [];
 
 var isMouseDown = false;
-
-var output = document.getElementById("result");
 
 //canvas to draw 
 var canvas = document.createElement("canvas")
@@ -140,7 +138,6 @@ function draw(x, y) {
             updateColor(x, y, selColor);
             bitmap[y][x] = colorShortcodes[colors.indexOf(selColor)];
         };
-    output.textContent = bitmap;
     };
 };
 
