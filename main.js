@@ -91,6 +91,14 @@ function onMouseMove(event) {
     };
 };
 
+//copy the current bitmap image shortcodes to the user's clipboard
+function copyToClipboard() {
+    navigator.clipboard.writeText(bitmap);
+    alert("Copied to clipboard!");
+};
+
+//set up grid according to current configs
+//optionally add a color, only really used for resetting to background
 function initializeBoard(color = defaultColor) {
     //draw the grid
     for (let y = 0; y < gridHeight; y++) {
