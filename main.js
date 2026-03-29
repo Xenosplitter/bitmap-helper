@@ -2,7 +2,7 @@ var gridWidth = 32;
 var gridHeight = 8;
 
 var tileSize = 32;
-var gap = 4;
+var gap = 0;
 var xBorder = 8;
 var yBorder = 120;
 
